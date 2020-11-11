@@ -11,22 +11,21 @@ function Find-Recurrence {
         String of charcters passed to the function
 
         .INPUTS
-        None. You cannot pipe objects to Add-Extension.
+        system.string, input string can be null or empty
 
         .OUTPUTS
-        Char, Returns the first recurring character or $null if none found 
+        Char, Returns the first recurring character or null if none found 
 
         .EXAMPLE
         C:\PS> Find-Recurrence -inputString "abcdfernsdadgdhgryjry"
-        a
+        d
 
         .EXAMPLE
         C:\PS> Find-Recurrence ";oiuhbv123"
-        $null
 
         .EXAMPLE
         C:\PS> Find-Recurrence "1djkfk+_)(`1ljlajsdklfh"
-        1
+        k
 
     #>
 
